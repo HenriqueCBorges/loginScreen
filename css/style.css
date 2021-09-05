@@ -92,6 +92,7 @@ main{
 }
 
 .right > .container-login > form > .form-group{
+    position: relative;
     margin-bottom: 20px;
 }
 
@@ -109,7 +110,7 @@ main{
 
     height: 30px;
     width: 275px;
-    padding: 5px;
+    padding: 5px 15px;
 
     border: 1px solid rgb(216, 211, 211);
     border-radius: 10px;
@@ -126,6 +127,16 @@ main{
     box-shadow: 0 0 0 0;
     outline: 0;
 }
+
+.right > .container-login > form > .form-group > i{
+    position: absolute;
+    top: 40px;
+    right: 15px;
+
+    color: rgba(41, 40, 39, 0.856);
+    cursor: pointer;
+}
+
 
 .right > .container-login > form > .remember{
     display: flex;
@@ -251,6 +262,30 @@ main{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     transition: 0.8s;
 }
+
+@media (max-width: 700px)
+{
+  .left{
+    display: none;
+   }
+
+   .right{
+    width: 100%;
+   }
+}
+
+@media (max-width: 1010px)
+{
+  .left{
+    display: none;
+   }
+
+   .right{
+    width: 100%;
+   }
+}
+
+
 
 
   
