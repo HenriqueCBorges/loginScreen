@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+main{
+    display: flex;
+    height: 100%;
+}
+
+.left{
+    width: 70%;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #889af3 0%, #f084e9 46%, #e7ce9e 100%);
+    background-image: url(/img/img-bg-left.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+.left > .container-informations{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left > .container-informations > .logo{
+    display: flex;
+}
+
+.left > .container-informations > .logo > span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(43deg, #889af3 0%, #f084e9 46%, #e7ce9e 100%);
+    transform: skew(-10deg);
+    width: 55px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.left > .container-informations > h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.left > .container-informations > h6{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: rgb(255, 255, 255);
+    padding: 0 15%;
+}
+
+.left > .container-informations > img{
+    height: 350px;
+    width: 350px;
+}
+
+.right{
+    width: 30%;
+}
+
+.right > .container-login{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right > .container-login > h4{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.right > .container-login > form > .form-group{
+    margin-bottom: 20px;
+}
+
+.right > .container-login > form > .form-group > label{
+    display: flex;
+    margin-bottom: 5px;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.right > .container-login > form > .form-group > input{
+    display: flex;
+
+    height: 30px;
+    width: 275px;
+    padding: 5px;
+
+    border: 1px solid rgb(216, 211, 211);
+    border-radius: 10px;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.right > .container-login > form > .form-group > input:focus{
+    border: 1px solid rgb(32, 109, 209);
+    border-radius: 10px;
+
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.right > .container-login > form > .remember{
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.right > .container-login > form > .remember > span{
+    display: flex;
+    margin-left: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.right > .container-login > form > .btn-submit{
+    background-image: linear-gradient(to right, #f857a6 0%, #ff5858  51%, #f857a6  100%)
+}
+
+.right > .container-login > form > .btn-submit{
+    width: 100%;
+    border: 1px solid transparent;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white; 
+
+    cursor: pointer;
+} 
+
+.right > .container-login > form > .btn-submit:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.right > .container-login > form > .hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.right > .container-login > form > .hr > span{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    position: relative;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    color: rgb(172, 160, 160); 
+    font-size: 1rem;    
+}
+
+.right > .container-login > form > .hr > span::before,
+.right > .container-login > form > .hr > span::after {
+  content: "";
+  position: absolute;
+  top: 0.75em;
+  width: 3em;
+  height: 0.05em;
+  background-color: rgb(212, 207, 207);
+  left: -3.25em;
+}
+.right > .container-login > form > .hr > span::after {
+  left: initial;
+  right: -3.25em;
+}
+
+.right > .container-login > form > .container-social{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    color: white;
+    font-size: 16px;
+}
+
+.right > .container-login > form > .container-social > .btn-google{
+    width: 100px;
+    background: rgb(219, 23, 23);
+    margin-right: 5px;
+    padding: 10px 0;
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.right > .container-login > form > .container-social > .btn-google:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: 0.8s;
+}
+
+.right > .container-login > form > .container-social > .btn-facebook{
+    width: 100px;
+    background: rgb(11, 136, 219);
+    margin-left: 5px;
+    padding: 10px 0;
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.right > .container-login > form > .container-social > .btn-facebook:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: 0.8s;
+}
+
+
+  
