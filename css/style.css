@@ -146,12 +146,28 @@ main{
     margin-bottom: 20px;
 }
 
-.right > .container-login > form > .remember > span{
+.right > .container-login > form > .remember > .newCheck{
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.right > .container-login > form > .remember > a{
     display: flex;
     margin-left: 5px;
     font-family: 'Nunito', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 14px;
+
+    text-decoration: none;
+    color: #000000;
+}
+
+.right > .container-login > form > .remember > a:hover{
+    text-decoration: underline;
+    color: #510077;
 }
 
 .right > .container-login > form > .btn-submit{
@@ -228,7 +244,7 @@ main{
 }
 
 .right > .container-login > form > .container-social > .btn-google{
-    width: 100px;
+    width: 50px;
     background: rgb(219, 23, 23);
     margin-right: 5px;
     padding: 10px 0;
@@ -246,9 +262,9 @@ main{
 }
 
 .right > .container-login > form > .container-social > .btn-facebook{
-    width: 100px;
+    width: 50px;
     background: rgb(11, 136, 219);
-    margin-left: 5px;
+    margin: 0 5px;
     padding: 10px 0;
 
     border: 1px solid transparent;
@@ -259,6 +275,24 @@ main{
 }
 
 .right > .container-login > form > .container-social > .btn-facebook:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: 0.8s;
+}
+
+.right > .container-login > form > .container-social > .btn-apple{
+    width: 50px;
+    background: rgb(15, 15, 15);
+    margin: 0 5px;
+    padding: 10px 0;
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.right > .container-login > form > .container-social > .btn-apple:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     transition: 0.8s;
 }
